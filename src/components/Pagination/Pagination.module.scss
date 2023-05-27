@@ -1,0 +1,36 @@
+
+
+.root{
+  padding-bottom: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+
+    :global{
+      li{
+        &.selected{
+          background-color: #FE5F1D;
+          color: #FFF;
+          &:hover{
+            background-color: #FE5F1D;
+            color: #FFF;
+          }
+        }
+        cursor: pointer;
+        background-color: #FAFAFA;
+        border-radius: 50%;
+        transition: all 0.3s ease-in-out;
+        &:hover{
+          background-color: rgba(#FE5F1D,0.2);
+          color: #000;
+        }
+        a{
+          padding: 10px 18px;
+          display: inline-block;
+        }
+      }
+    }
+}
+
+

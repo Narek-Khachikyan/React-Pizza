@@ -1,0 +1,31 @@
+.root{
+  max-width: 300px;
+  width: 100%;
+  position: relative;
+}
+.input{
+  width: 100%;
+  padding: 10px 10px 10px 30px;
+  border-radius: 10px;
+  border: 1px solid rgba(#000,0.2);
+
+
+  &:focus{
+    border: 1px solid rgba(#000,1);
+    outline: none;
+  }
+}
+
+.searchIcon{
+  position: absolute;
+  left: 8px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+@media (max-width:645px) {
+  .root{
+    max-width: 100%;
+    width: 100%;
+  }
+}

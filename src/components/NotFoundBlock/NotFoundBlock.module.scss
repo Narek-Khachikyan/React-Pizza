@@ -1,0 +1,18 @@
+.wrapper{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.emoji{
+  font-size: 64px;
+  margin-bottom: 15px;
+}
+
+.text{
+    font-family: sans-serif;
+    font-size: 48px;
+    line-height: 55px;
+    font-weight: 500;
+}
