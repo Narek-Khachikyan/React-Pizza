@@ -3,7 +3,6 @@ import Sort from '../components/Sort/Sort';
 import { FC, useEffect } from 'react';
 import Skeleton from '../components/PizzaBlock/Skeleton';
 import Categories from '../components/Categories/Categories';
-import Pagination from '../components/Pagination/Pagination';
 import { setCategoryId, setCurrentPage } from '../redux/slices/filterSlice';
 import { useDispatch, useSelector } from 'react-redux';
 import { fetchPizzas } from '../redux/slices/pizzasSlice';
@@ -56,7 +55,6 @@ const Home: FC = () => {
          ) : (
             <div className="content__items">{status === 'loading' ? skeletons : pizzas}</div>
          )}
-         <Pagination currentPage={currentPage} onChangePage={onChangePage} />
       </>
    );
 };
