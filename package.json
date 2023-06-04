@@ -1,7 +1,7 @@
 {
   "name": "react-pizza",
   "private": true,
-  "homepage": "https://github.com/magiccwarss/React-Pizza",
+  "homepage": "https://magiccwarss.github.io/React-Pizza/",
   "version": "0.0.0",
   "type": "module",
   "scripts": {
@@ -9,8 +9,8 @@
     "build": "vite build",
     "lint": "eslint src --ext js,jsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview",
-    "deploy":"gh-pages -d build",
-    "predeploy":"npm run build"
+    "deploy": "gh-pages -d dist",
+    "predeploy": "npm run build"
   },
   "dependencies": {
     "@reduxjs/toolkit": "^1.9.5",
