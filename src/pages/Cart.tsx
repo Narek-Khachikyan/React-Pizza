@@ -10,8 +10,8 @@ const Cart: FC = () => {
    const items = useSelector((state: any) => state.cart.items);
    const { totalPrice } = useSelector(selectCart);
    const totalCount = items.reduce((sum: number, item: any) => sum + item.count, 0);
-   const onClickClear = () => {
-      if (window.confirm('Clear?)')) {
+   const onClickClear = (text: string) => {
+      if (window.confirm(text)) {
          dispatch(clearItems());
       }
    };
@@ -57,7 +57,7 @@ const Cart: FC = () => {
                         </svg>
                         Cart
                      </h2>
-                     <button onClick={onClickClear} className="cart__clear">
+                     <button onClick={() => onClickClear('Clear?')} className="cart__clear">
                         <svg
                            width="20"
                            height="20"
@@ -132,9 +132,9 @@ const Cart: FC = () => {
 
                            <span>Come back</span>
                         </Link>
-                        <div className="button pay-btn">
+                        <button onClick={() => onClickClear('Pay now?')} className="button pay-btn">
                            <span>Pay now</span>
-                        </div>
+                        </button>
                      </div>
                   </div>
                </div>
